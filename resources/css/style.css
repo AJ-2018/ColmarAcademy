@@ -1,0 +1,180 @@
+/*Universal Styles*/
+
+html, body{
+  font-size: 16px;
+  font-family: "Open Sans";
+  box-sizing: border-box;
+}
+
+
+/*   header section   */
+
+header{
+  font-family: "Source Sans Pro";
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem;
+  height: 3rem;
+}
+
+.company-logo{
+  margin-left: 1rem;
+}
+
+.company{
+  font-family: "K2D";
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: rgb( 32, 169, 233);
+  margin: 0 auto 0 0.5rem;
+}
+
+.company-color{
+  color: rgb(160, 160, 160);
+}
+
+nav span{
+  margin-left: 2rem;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.last-nav{
+  margin-right: 2.5rem;
+}
+
+
+/*   banner section   */
+
+.banner{
+  padding: 5.2rem 1.5rem 2rem 1.5rem; /*   To offset the space of fixed header  */
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 245, 220);
+}
+
+.banner img{
+  width: 60%;
+}
+
+.banner p{
+  margin: 0 0 2rem 0;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+.banner-title{
+  font-size: 3rem;
+  color: rgb(0,153,51);
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.banner-text{
+  color: rgb(96, 96, 96);
+}
+
+.button{
+  background-color: rgb(51, 51, 255);
+  width: 10rem;
+  height: auto;
+  text-align: center;
+  padding: 1rem 4rem;
+  margin: 2.5rem 0 0 0;
+  color: white;
+  opacity: 0.9;
+}
+
+
+/*    main section    */
+
+.main-section{
+  margin: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+/* main information section  */
+
+.info-main{
+  margin: 0 1.5rem 0 0;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-main img{
+  padding: 0 0 2rem 0;
+  width: 100%;
+
+}
+
+.main-content h1{
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 0 1.5rem 0;
+  color: rgb(153, 51, 153);
+}
+
+.main-content h2{
+  font-size: 1.1rem;
+  padding: 0 0 1.5rem 0;
+}
+
+.main-content h3{
+  font-size: 0.9rem;
+}
+
+
+/*   other details info  */
+
+.info-details{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-details img{
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.info-details a{
+  color: rgb(0,204,204);
+}
+
+.orientation,
+  .campus,
+    .guest-lecture{
+      display: flex;
+      align-items: center;
+      border: 0.125rem solid rgb(211,211,211);
+}
+
+.details-content {
+  width: 65%;
+}
+
+.details-content p{
+  padding: 0 0 1rem 0;
+}
+
+.title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(153, 51, 153);
+}
