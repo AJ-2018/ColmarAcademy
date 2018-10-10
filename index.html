@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Colmar Academy</title>
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/images/ic-logo-favicon.png" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Open+Sans:400,600|Source+Sans+Pro" rel="stylesheet">
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -14,6 +15,7 @@
       <nav>
         <span><a href="#">On campus</a></span>
         <span><a href="#">Online</a></span>
+        <span><a href="#">For companies</a></span>
         <span class="last-nav"><a href="#">Sign In</a></span>
       </nav>
     </header>
@@ -23,7 +25,7 @@
       <div class="banner-content">
         <p class="banner-title">Learn something <br> new everyday</p>
         <p class="banner-text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
-        <p class="button">Start here</p>
+        <p class="button"><a href="#courses">Start here</a></p>
       </div>
     </div>
 
@@ -67,13 +69,13 @@
       </div>
     </div>
 
-      <div class="courses-section">
-        <p class="call-action">Start Learning</p>
+      <div class="courses-section" id="courses">
+        <p class="call-action"><a href="#">Start Learning</a></p>
         <div class="courses">
           <div class="course software-engineering">
             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/course-software.jpg" alt="computers">
             <div class="course-details">
-              <p class="course-title">Software engineering</p>
+              <p class="course-title"><a href="#">Software engineering</a></p>
               <p class="uppercase">Courses</p>
               <p class="course-content">Web Development, Mobile Development, iOT, APIs</p>
             </div>
@@ -82,7 +84,7 @@
           <div class="course computer-art">
             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/course-computer-art.jpg" alt="phone">
             <div class="course-details">
-              <p class="course-title">Computer art</p>
+              <p class="course-title"><a href="#">Computer art</a></p>
               <p class="uppercase">Courses</p>
               <p class="course-content">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
             </div>
@@ -91,7 +93,7 @@
           <div class="course design">
             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/course-design.jpg" alt="camera">
             <div class="course-details">
-              <p class="course-title">Design</p>
+              <p class="course-title"><a href="#">Design</a></p>
               <p class="uppercase">Courses</p>
               <p class="course-content">User Experience Design, User Research, Visual Design</p>
             </div>
@@ -100,16 +102,16 @@
           <div class="course data">
             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/course-data.jpg" alt="data">
             <div class="course-details">
-              <p class="course-title">Data</p>
+              <p class="course-title"><a href="#">Data</a></p>
               <p class="uppercase">Courses</p>
-              <p class="course-content"> Data Science, Big Data, SQL, Data Visualization</p>
+              <p class="course-content">Data Science, Big Data, SQL, Data Visualization</p>
             </div>
           </div>
 
           <div class="course business">
             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/course-business.jpg" alt="chess">
             <div class="course-details">
-              <p class="course-title">Business</p>
+              <p class="course-title"><a href="#">Business</a></p>
               <p class="uppercase">Courses</p>
               <p class="course-content">Product Development, Business Development, Startup</p>
             </div>
@@ -118,12 +120,52 @@
           <div class="course marketing">
             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/course-marketing.jpg" alt="">
             <div class="course-details">
-              <p class="course-title">Marketing</p>
+              <p class="course-title"><a href="#">Marketing</a></p>
               <p class="uppercase">Courses</p>
               <p class="course-content">Analytics, Content Marketing, Mobile Marketing</p>
             </div>
          </div>
        </div>
+     </div>
+
+     <div class="thesis-section">
+       <p class="thesis-title"><a href="#">Thesis exhibit</a></p>
+       <div class="thesis-content">
+         <div class="main-video">
+           <video src="https://github.com/AJ-2018/ColmarAcademy/blob/master/resources/videos/thesis.mp4?raw=true" controls>
+           </video>
+           <div class="video-content">
+             <h1 class="video-title">Reimagine urban</h1>
+             <h2 class="video-text">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec <br> consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget <br> magna laoreet, efficitur dolor consequat, tristique ligula."</h2>
+           </div>
+         </div>
+
+         <div class="main-articles">
+           <div class="thesis-fisma">
+             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/thesis-fisma.jpg" alt"">
+             <div class="articles-content">
+               <p class="article-title">Fisma: Design and Prototype</p>
+               <p>Designer showcase of new prototype product</p>
+               <p><a href="#">Read more</a></p>
+             </div>
+           </div>
+
+           <div class="thesis-comparison">
+             <img src="https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/thesis-now-and-then.jpg" alt="">
+             <div class="articles-content">
+               <p class="article-title">Now and then</p>
+               <p>Research study about New York.</p>
+               <p><a href="#">Read more</a></p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="footer">
+       <p class="copyright">&copy; 2018 Colmar Academy. All rights reserved.</p>
+       <p class="rules"><a href="">Terms</a></p>
+       <p class="rules"><a href="">Privacy</a></p>
      </div>
 
   </body>
