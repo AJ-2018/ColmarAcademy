@@ -7,6 +7,19 @@ html, body{
   line-height: 1.4;
 }
 
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+@media only screen and (max-width: 720px){
+
+  html, body{
+    font-size: 14px;
+  }
+
+}
+
 
 /*   header section   */
 
@@ -41,25 +54,44 @@ header{
   opacity: 0.8;
 }
 
-nav span{
+.desktop-tablet-nav span{
   margin: 0 0 0 1rem;
   padding: 0.3rem 0.8rem;
   line-height: 1;
 }
 
-nav span:hover{
+.desktop-tablet-nav span:hover{
   background-color: rgb( 32, 169, 233);
   color: rgb(255, 255, 255);
   border-radius: 1.25rem;
 }
 
-a{
-  color: inherit;
-  text-decoration: inherit;
+.desktop-tablet-nav .last-nav{
+  margin-right: 2.5rem;
 }
 
-.last-nav{
-  margin-right: 2.5rem;
+.mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-width: 450px){
+
+  header{
+    padding: 0.5rem 0;
+  }
+
+  .company-logo,
+   .company,
+    .desktop-tablet-nav{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
 }
 
 
@@ -114,6 +146,25 @@ a{
   background-color: rgb(102,51,0);
 }
 
+@media only screen and (max-width: 720px){
+  .banner-title{
+    font-size: 2rem;
+  }
+
+  .banner-content{
+    font-size: 1rem;
+  }
+
+  .button{
+    font-size: 1.2rem;
+  }
+}
+
+
+@media only screen and (max-width: 450px){
+  
+}
+
 
 /*    main section    */
 
@@ -155,6 +206,13 @@ a{
   font-size: 0.9rem;
 }
 
+@media only screen and (max-width: 720px){
+  .main-content h1{
+    font-size: 1.8rem;
+  }
+
+}
+
 
 /*   other details info  */
 
@@ -180,6 +238,7 @@ a{
       display: flex;
       align-items: center;
       border: 0.125rem solid rgb(211,211,211);
+      padding: 0 0.3rem 0.8rem 0.5rem;
 }
 
 .details-content {
@@ -187,13 +246,29 @@ a{
 }
 
 .details-content p{
-  padding: 0 0 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 .title{
   font-size: 1.5rem;
   font-weight: 600;
   color: rgb(153, 51, 153);
+}
+
+@media only screen and (max-width:720px){
+
+  .title{
+    font-size: 1.3rem;
+  }
+
+  .info-details img{
+    width: 40%;
+    height: 60%;
+  }
+
+  .details-content{
+    width: 60%;
+  }
 }
 
 
@@ -229,6 +304,13 @@ a{
   opacity: 1;
 }
 
+@media only screen and (max-width: 720px){
+  .courses-section{
+    margin: 4rem 0 0 0;
+    padding: 4rem 4.7rem;
+  }
+
+}
 
 
 /*     all courses   */
@@ -240,7 +322,7 @@ a{
 }
 
 .course{
-  margin: 3rem 2rem 0 0;
+  margin: 3rem 3rem 0 0;
   background-color: rgb(255,255,204);
   width: 18rem;
 }
@@ -265,6 +347,14 @@ a{
   padding: 0.8rem 0;
 }
 
+@media only screen and (max-width: 720px){
+
+  .course{
+    margin: 3rem 1.7rem 1rem 1.3rem;
+    width: 17rem;
+  }
+
+}
 
 
 
@@ -272,7 +362,7 @@ a{
 /*    thesis section    */
 
 .thesis-section{
-  padding: 6rem 0 3rem 1.5rem;
+  padding: 6rem 1.5rem 3rem 1.5rem;
 }
 
 .thesis-title{
@@ -322,6 +412,21 @@ a{
     font-weight: 600;
   }
 
+
+@media only screen and (max-width: 720px){
+
+  .thesis-section{
+    padding: 4rem 1.5rem 3rem 1.5rem;
+  }
+
+  .video-title{
+    font-size: 1.4rem;
+  }
+}
+
+
+/*    other articles    */
+
 .main-articles{
   width: 40%;
   display: flex;
@@ -351,11 +456,32 @@ a{
 
 .articles-content{
   width: 65%;
-  padding: 0 0 0 0.5rem;
+  padding: 0 0 0.8rem 0.5rem;
 }
 
 .articles-content p{
-  padding: 0 0 1rem 0;
+  padding: 1rem 0.8rem 0 0;
+}
+
+@media only screen and (max-width: 720px){
+  .thesis-fisma img{
+    width: 40%;
+    height: 55%;
+  }
+
+  .thesis-fisma p{
+    padding: 0.7rem 0.6rem 0 0;
+  }
+
+  .articles-content{
+    width: 60%;
+  }
+
+  .article-title{
+    font-size: 1.2rem;
+  }
+
+
 }
 
 
@@ -383,4 +509,13 @@ a{
 .rules:hover{
   background-color: white;
   border-radius: 1.25rem;
+}
+
+
+@media only screen and (max-width: 720px){
+
+  .footer{
+    font-size: 0.9rem;
+    height: 2.5rem;
+  }
 }
