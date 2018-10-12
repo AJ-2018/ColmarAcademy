@@ -20,6 +20,20 @@ a{
 
 }
 
+@media only screen and (max-width: 480px){
+
+  html, body{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+
+  html, body{
+    font-size: 14px;
+  }
+
+}
 
 /*   header section   */
 
@@ -31,8 +45,9 @@ header{
   z-index: 10;
   background-color: white;
   width: 100%;
+  box-sizing: border-box;
   padding: 0.5rem;
-  height: 3rem;
+  height: 4rem;
   background-image: url("https://raw.githubusercontent.com/AJ-2018/ColmarAcademy/master/resources/images/bg-texture.jpg");
   border: 0.125rem solid rgb(153,153,51);
 }
@@ -67,14 +82,14 @@ header{
 }
 
 .desktop-tablet-nav .last-nav{
-  margin-right: 2.5rem;
+  margin-right: 2rem;
 }
 
 .mobile-nav{
   display: none;
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 480px){
 
   header{
     padding: 0.5rem 0;
@@ -90,6 +105,15 @@ header{
     display: flex;
     justify-content: space-around;
     width: 100%;
+  }
+
+  .mobile-nav img{
+    padding: 0.3rem 0.8rem;
+  }
+
+  .mobile-nav img:active{
+    background-color: rgb( 32, 169, 233);
+    color: rgb(255, 255, 255);
   }
 
 }
@@ -108,15 +132,15 @@ header{
   width: 60%;
 }
 
-.banner p{
-  margin: 0 0 2rem 0;
-}
-
 .banner-content{
   display: flex;
   flex-direction: column;
   margin: 0 0 0 1.5rem;
   font-size: 1.5rem;
+}
+
+.banner p{
+  margin: 0 0 2rem 0;
 }
 
 .banner-title{
@@ -133,7 +157,7 @@ header{
 
 .button{
   background-color: rgb(51, 51, 255);
-  width: 10rem;
+  width: 14rem;
   height: auto;
   text-align: center;
   padding: 1rem 4rem;
@@ -156,13 +180,48 @@ header{
   }
 
   .button{
+    width: 10rem;
     font-size: 1.2rem;
   }
 }
 
 
-@media only screen and (max-width: 450px){
-  
+@media only screen and (max-width: 480px){
+
+  .banner {
+    padding: 4.2rem 0 0 0;
+    flex-direction: column;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .banner-content {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.3rem;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-content .banner-text {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .button {
+    width: 12rem;
+    font-size: 1.3rem;
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+
+  .banner-title{
+    font-size: 2.3rem;
+  }
 }
 
 
@@ -213,6 +272,17 @@ header{
 
 }
 
+@media only screen and (max-width: 480px){
+
+  .main-section {
+    margin: 2rem 1rem;
+  }
+
+  .info-main {
+    display: none;
+  }
+}
+
 
 /*   other details info  */
 
@@ -255,6 +325,10 @@ header{
   color: rgb(153, 51, 153);
 }
 
+.mobile.info-details {
+  display: none;
+}
+
 @media only screen and (max-width:720px){
 
   .title{
@@ -269,6 +343,42 @@ header{
   .details-content{
     width: 60%;
   }
+}
+
+@media only screen and (max-width: 480px){
+
+  .desktop-tablet.info-details{
+    display: none;
+  }
+
+  .mobile.info-details{
+    display: block;
+    width: 100%;
+  }
+
+  .orientation,
+    .campus,
+      .guest-lecture{
+        flex-direction: column;
+        border-width: 0 0 0.125rem 0;
+        border-style: solid;
+        border-color: rgb(211,211,211);
+        padding: 0 0.5rem 2rem 0.5rem;
+
+      }
+
+
+  .info-details img {
+    width: 100%;
+    height: auto;
+  }
+
+  .details-content {
+    width: 100%;
+    padding: 0 0 0 1.5rem;
+  }
+
+
 }
 
 
@@ -312,6 +422,22 @@ header{
 
 }
 
+@media only screen and (max-width: 480px){
+
+  .call-action{
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 2rem;
+  }
+
+  .courses-section{
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+
+}
+
 
 /*     all courses   */
 
@@ -347,6 +473,10 @@ header{
   padding: 0.8rem 0;
 }
 
+.mobile.courses{
+  display: none;
+}
+
 @media only screen and (max-width: 720px){
 
   .course{
@@ -354,6 +484,25 @@ header{
     width: 17rem;
   }
 
+}
+
+@media only screen and (max-width: 480px){
+
+  .desktop-tablet.courses{
+    display: none;
+  }
+
+  .mobile.courses{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 1rem 2rem 1rem;
+  }
+
+  .course-title{
+    margin: 0 2rem 1rem 0;
+    padding: 1rem 0 1.3rem 2rem;
+    background-color: rgb(255, 255, 204);
+  }
 }
 
 
