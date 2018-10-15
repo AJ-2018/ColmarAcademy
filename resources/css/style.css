@@ -734,7 +734,33 @@ header{
   }
 }
 
+/*   Social sharing  */
 
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+
+.social span{
+  color: rgb(0, 153, 51);
+  font-weight: 600;
+}
+
+.fa{
+  margin: 0.6rem 1.5rem 0.5rem 0;
+}
+
+.fa:hover{
+  color: rgb(255, 153, 0);
+}
+
+@media only screen and (max-width: 320px){
+  .social span{
+    margin: 0 1rem;
+  }
+}
 
 /*    footer section    */
 
